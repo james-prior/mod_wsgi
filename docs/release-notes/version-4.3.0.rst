@@ -27,7 +27,7 @@ required group.
 passing into access/authentication/authorisation handlers, the behvaiour
 of Apache 2.4 as it pertained to the WSGI application, whereby it
 blocked the passing of any HTTP headers with a name which did not contain
-just alphanumerics or '-', was not being mirrored. This created the
+just alphanumerics or ``-``, was not being mirrored. This created the
 possibility of HTTP header spoofing in certain circumstances. Such headers
 are now being ignored.
 
@@ -45,7 +45,7 @@ Features Changed
 ----------------
 
 1. In Apache 2.4, any headers with a name which does not include only
-alphanumerics or '-' are blocked from being passed into a WSGI application
+alphanumerics or ``-`` are blocked from being passed into a WSGI application
 when the CGI like WSGI ``environ`` dictionary is created. This is a
 mechanism to prevent header spoofing when there are multiple headers where
 the only difference is the use of non alphanumerics in a specific character
@@ -59,7 +59,7 @@ against what the HTTP RFC says is allowed for HTTP header names, but such
 blocking would occur in Apache 2.4 anyway due to changes in Apache. It is
 also understood that other web servers such as nginx also perform the same
 type of blocking. Reliance on HTTP headers which use characters other
-than alphanumerics and '-' is therefore dubious as many servers will now
+than alphanumerics and ``-`` is therefore dubious as many servers will now
 discard them when needing to be passed into a system which requires the
 headers to be passed as CGI like variables such as is the case for WSGI.
 

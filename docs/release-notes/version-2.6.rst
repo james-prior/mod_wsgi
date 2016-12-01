@@ -21,22 +21,22 @@ Bug Fixes
 ---------
 
 1. Fixed build issue on MacOS X where incorrect Python framework found at
-run time. This was caused by '-W,-l' option prefix being dropped from '-F'
+run time. This was caused by ``-W,-l`` option prefix being dropped from ``-F``
 option in LDFLAGS of Makefile and not reverted back when related changes
 undone. This would affect Python 2.3 through 2.5. For more details see:
 
   http://code.google.com/p/modwsgi/issues/detail?id=28
 
 2. Fixed build issue on MacOS X where incorrect Python framework found at
-run time. This was caused by '-L/-l' flags being used for versions of Python
+run time. This was caused by ``-L/-l`` flags being used for versions of Python
 prior to 2.6. That approach, even where '.a' library link to framework exists,
 doesn't seem to work for the older Python versions.
 
-Because of the unpredictability as to when '-F/-framework' or '-L/-l'
+Because of the unpredictability as to when ``-F/-framework`` or ``-L/-l``
 should be used for specific Python versions or distributions. Now always
-link against Python framework via '-F/-framework' if available. If for some
+link against Python framework via ``-F/-framework`` if available. If for some
 particular setup this isn't working, then the ``--disable-framework`` option
-can be supplied to 'configure' script to force use of '-L/-l'. For more
+can be supplied to 'configure' script to force use of ``-L/-l``. For more
 details see:
 
   http://code.google.com/p/modwsgi/issues/detail?id=28

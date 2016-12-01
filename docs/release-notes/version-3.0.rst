@@ -369,7 +369,7 @@ See:
   http://code.google.com/p/modwsgi/issues/detail?id=57
 
 15. Implement WSGIPythonWarnings directive as equivalent to the 'python'
-executable '-W' option. The directive can be used at global scope in Apache
+executable ``-W`` option. The directive can be used at global scope in Apache
 configuration to provide warning control strings to disable messages produced
 by the warnings module. For example::
 

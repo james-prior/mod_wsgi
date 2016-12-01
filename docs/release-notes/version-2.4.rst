@@ -161,7 +161,7 @@ with standard directories still overriding additions. For details see:
 daemon process to be the actual user that the process runs as rather than
 what may be inherited from Apache root process, which would typically be
 'root' or the user that executed 'sudo' to start Apache, if they hadn't
-used '-H' option to 'sudo'. See:
+used ``-H`` option to 'sudo'. See:
 
   http://code.google.com/p/modwsgi/issues/detail?id=129
 
