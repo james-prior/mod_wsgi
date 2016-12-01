@@ -495,7 +495,7 @@ support is available, the process group::
   WSGIImportScript /usr/local/wsgi/script/import.wsgi \
    process-group=%{GLOBAL} application-group=django
 
-14. Add "--disable-embedded" option to "configure" script so that ability
+14. Add ``--disable-embedded`` option to "configure" script so that ability
 to run a WSGI application in embedded mode can be disabled completely.
 Also added the directive WSGIRestrictEmbedded so that ability to run a
 WSGI application in embedded mode can be disabled easily if support for

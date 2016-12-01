@@ -35,7 +35,7 @@ doesn't seem to work for the older Python versions.
 Because of the unpredictability as to when '-F/-framework' or '-L/-l'
 should be used for specific Python versions or distributions. Now always
 link against Python framework via '-F/-framework' if available. If for some
-particular setup this isn't working, then the '--disable-framework' option
+particular setup this isn't working, then the ``--disable-framework`` option
 can be supplied to 'configure' script to force use of '-L/-l'. For more
 details see:
 

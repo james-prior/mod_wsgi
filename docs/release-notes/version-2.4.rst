@@ -151,7 +151,7 @@ libraries that Python needs. For details see:
 8: Reorder sys.path after having called site.addsitedir() in WSGIPythonPath
 and python-path option for WSGIDaemonProcess. This ensures that newly added
 directories get moved to front of sys.path and that they take precedence over
-standard directories. This in part avoids need to ensure --no-site-packages
+standard directories. This in part avoids need to ensure ``--no-site-packages``
 option used when creating virtual environments, as shouldn't have an issue
 with standard directories still overriding additions. For details see:
 
